@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Banking.Models\Banking.Models.csproj" />
+    <ProjectReference Include="..\Banking.Cli\Banking.Cli.csproj" />
   </ItemGroup>
 
 </Project>
