@@ -32,12 +32,12 @@
             <td></td>
             <td class="headerItem">Lines:</td>
             <td class="headerCovTableEntry">0</td>
-            <td class="headerCovTableEntry">26</td>
+            <td class="headerCovTableEntry">30</td>
             <td class="headerCovTableEntryLo">0.0 %</td>
           </tr>
           <tr>
             <td class="headerItem">Date:</td>
-            <td class="headerValue">2020-01-22 19:12:04</td>
+            <td class="headerValue">2020-01-22 19:43:52</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntry">0</td>
@@ -107,22 +107,25 @@
 <span class="lineNum">      45 </span>            : 
 <span class="lineNum">      46 </span>            :         private static void CreateAccount(FileRepository repo)
 <span class="lineNum">      47 </span><span class="lineNoCov">          0 :         {</span>
-<span class="lineNum">      48 </span>            :             //var view = new CreateAccountView(&quot;Create New Account&quot;, new ShellConsole())
-<span class="lineNum">      49 </span>            :             // Console.WriteLine(&quot;--------------------&quot;);
-<span class="lineNum">      50 </span>            :             // Console.WriteLine(&quot;Create New Account&quot;);
-<span class="lineNum">      51 </span>            :             // Console.WriteLine(&quot;--------------------&quot;);
-<span class="lineNum">      52 </span>            :             // Console.Write(&quot;Account No:&quot;);
-<span class="lineNum">      53 </span>            :             // var accountId = Convert.ToInt32(Console.ReadLine());
-<span class="lineNum">      54 </span>            :             // Console.Write(&quot;Balance:&quot;);
-<span class="lineNum">      55 </span>            :             // var amount = Convert.ToDecimal(Console.ReadLine());
-<span class="lineNum">      56 </span>            :             // var account = new Account(accountId, amount);
-<span class="lineNum">      57 </span>            :             // repo.Save(account);
-<span class="lineNum">      58 </span>            :             // Console.WriteLine($&quot;Account {accountId} created successfully&quot;);
-<span class="lineNum">      59 </span>            :             // Console.WriteLine(&quot;Press Enter to continue...&quot;);
-<span class="lineNum">      60 </span>            :             // Console.ReadLine();
-<span class="lineNum">      61 </span><span class="lineNoCov">          0 :         }</span>
-<span class="lineNum">      62 </span>            :     }
-<span class="lineNum">      63 </span>            : }
+<span class="lineNum">      48 </span><span class="lineNoCov">          0 :             var view = new CreateAccountView(&quot;Create New Account&quot;, </span>
+<span class="lineNum">      49 </span><span class="lineNoCov">          0 :                 new ConsoleShell(), </span>
+<span class="lineNum">      50 </span><span class="lineNoCov">          0 :                 new FileRepository(&quot;.&quot;));</span>
+<span class="lineNum">      51 </span><span class="lineNoCov">          0 :             view.Show();</span>
+<span class="lineNum">      52 </span>            :             // Console.WriteLine(&quot;--------------------&quot;);
+<span class="lineNum">      53 </span>            :             // Console.WriteLine(&quot;Create New Account&quot;);
+<span class="lineNum">      54 </span>            :             // Console.WriteLine(&quot;--------------------&quot;);
+<span class="lineNum">      55 </span>            :             // Console.Write(&quot;Account No:&quot;);
+<span class="lineNum">      56 </span>            :             // var accountId = Convert.ToInt32(Console.ReadLine());
+<span class="lineNum">      57 </span>            :             // Console.Write(&quot;Balance:&quot;);
+<span class="lineNum">      58 </span>            :             // var amount = Convert.ToDecimal(Console.ReadLine());
+<span class="lineNum">      59 </span>            :             // var account = new Account(accountId, amount);
+<span class="lineNum">      60 </span>            :             // repo.Save(account);
+<span class="lineNum">      61 </span>            :             // Console.WriteLine($&quot;Account {accountId} created successfully&quot;);
+<span class="lineNum">      62 </span>            :             // Console.WriteLine(&quot;Press Enter to continue...&quot;);
+<span class="lineNum">      63 </span>            :             // Console.ReadLine();
+<span class="lineNum">      64 </span><span class="lineNoCov">          0 :         }</span>
+<span class="lineNum">      65 </span>            :     }
+<span class="lineNum">      66 </span>            : }
 </pre>
       </td>
     </tr>

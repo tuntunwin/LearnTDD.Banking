@@ -9,7 +9,7 @@ namespace Banking.Tests
     public class CliTests{
         [Fact]
         public void Create_Account_Test(){
-            var consoleMock = new Mock<IConsole>();
+            var consoleMock = new Mock<IShell>();
             consoleMock.SetupSequence(c => c.ReadLine())
                 .Returns("1111")
                 .Returns("2000");

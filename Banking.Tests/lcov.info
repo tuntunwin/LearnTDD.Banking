@@ -76,22 +76,47 @@ BRH:0
 FNF:2
 FNH:1
 end_of_record
-SF:/home/ttwin/projects/LearnTDD.Banking/Banking.Cli/IConsole.cs
-FN:12,System.Void ShellConsole::WriteLine(System.String)
-FNDA:0,System.Void ShellConsole::WriteLine(System.String)
-DA:13,0
-FN:13,System.Void ShellConsole::Write(System.String)
-FNDA:0,System.Void ShellConsole::Write(System.String)
-DA:14,0
-FN:14,System.String ShellConsole::ReadLine()
-FNDA:0,System.String ShellConsole::ReadLine()
-DA:15,0
+SF:/home/ttwin/projects/LearnTDD.Banking/Banking.Cli/ConsoleShell.cs
+FN:6,System.Void Banking.Cli.ConsoleShell::WriteLine(System.String)
+FNDA:0,System.Void Banking.Cli.ConsoleShell::WriteLine(System.String)
+DA:7,0
+FN:7,System.Void Banking.Cli.ConsoleShell::Write(System.String)
+FNDA:0,System.Void Banking.Cli.ConsoleShell::Write(System.String)
+DA:8,0
+FN:8,System.String Banking.Cli.ConsoleShell::ReadLine()
+FNDA:0,System.String Banking.Cli.ConsoleShell::ReadLine()
+DA:9,0
 LF:3
 LH:0
 BRF:0
 BRH:0
 FNF:3
 FNH:0
+end_of_record
+SF:/home/ttwin/projects/LearnTDD.Banking/Banking.Cli/CreateAccountView.cs
+FN:11,System.Void Banking.Cli.CreateAccountView::ShowContent()
+FNDA:1,System.Void Banking.Cli.CreateAccountView::ShowContent()
+DA:12,1
+DA:13,1
+DA:14,1
+DA:15,1
+DA:16,1
+DA:17,1
+DA:18,1
+DA:19,1
+DA:20,1
+DA:21,1
+DA:22,1
+FN:8,System.Void Banking.Cli.CreateAccountView::.ctor(System.String,IShell,Banking.Models.IRepository)
+FNDA:2,System.Void Banking.Cli.CreateAccountView::.ctor(System.String,IShell,Banking.Models.IRepository)
+DA:9,2
+DA:11,1
+LF:13
+LH:13
+BRF:0
+BRH:0
+FNF:2
+FNH:2
 end_of_record
 SF:/home/ttwin/projects/LearnTDD.Banking/Banking.Cli/Program.cs
 FN:8,System.Void Banking.Cli.Program::Main(System.String[])
@@ -129,8 +154,12 @@ DA:44,0
 FN:46,System.Void Banking.Cli.Program::CreateAccount(Banking.Models.FileRepository)
 FNDA:0,System.Void Banking.Cli.Program::CreateAccount(Banking.Models.FileRepository)
 DA:47,0
-DA:61,0
-LF:26
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:64,0
+LF:30
 LH:0
 BRF:4
 BRH:0
@@ -138,39 +167,39 @@ FNF:3
 FNH:0
 end_of_record
 SF:/home/ttwin/projects/LearnTDD.Banking/Banking.Cli/View.cs
-FN:5,IConsole Banking.Cli.View::get_Shell()
-FNDA:8,IConsole Banking.Cli.View::get_Shell()
-DA:6,8
-FN:6,Banking.Models.IRepository Banking.Cli.View::get_Repository()
+FN:5,System.String Banking.Cli.View::get_Header()
+FNDA:2,System.String Banking.Cli.View::get_Header()
+DA:6,2
+FN:6,IShell Banking.Cli.View::get_Shell()
+FNDA:11,IShell Banking.Cli.View::get_Shell()
+DA:7,11
+FN:7,Banking.Models.IRepository Banking.Cli.View::get_Repository()
 FNDA:2,Banking.Models.IRepository Banking.Cli.View::get_Repository()
-DA:7,2
-FN:7,System.Void Banking.Cli.View::.ctor(System.String,IConsole,Banking.Models.IRepository)
-FNDA:2,System.Void Banking.Cli.View::.ctor(System.String,IConsole,Banking.Models.IRepository)
 DA:8,2
-DA:9,1
-DA:10,1
-DA:11,1
-FN:21,System.Void Banking.Cli.CreateAccountView::Show()
-FNDA:1,System.Void Banking.Cli.CreateAccountView::Show()
+FN:13,System.Void Banking.Cli.View::Show()
+FNDA:1,System.Void Banking.Cli.View::Show()
+DA:14,1
+DA:15,1
+DA:16,1
+DA:17,1
+FN:20,System.Void Banking.Cli.View::ShowHeader()
+FNDA:1,System.Void Banking.Cli.View::ShowHeader()
+DA:21,1
 DA:22,1
 DA:23,1
 DA:24,1
 DA:25,1
-DA:26,1
-DA:27,1
-DA:28,1
-DA:29,1
-DA:30,1
-DA:31,1
-DA:32,1
-FN:18,System.Void Banking.Cli.CreateAccountView::.ctor(System.String,IConsole,Banking.Models.IRepository)
-FNDA:2,System.Void Banking.Cli.CreateAccountView::.ctor(System.String,IConsole,Banking.Models.IRepository)
-DA:19,2
-DA:21,1
-LF:19
-LH:19
+FN:8,System.Void Banking.Cli.View::.ctor(System.String,IShell,Banking.Models.IRepository)
+FNDA:2,System.Void Banking.Cli.View::.ctor(System.String,IShell,Banking.Models.IRepository)
+DA:9,2
+DA:10,1
+DA:11,1
+DA:12,1
+DA:13,1
+LF:17
+LH:17
 BRF:0
 BRH:0
-FNF:5
-FNH:5
+FNF:6
+FNH:6
 end_of_record

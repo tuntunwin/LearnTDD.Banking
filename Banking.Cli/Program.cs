@@ -46,7 +46,7 @@ namespace Banking.Cli
         private static void CreateAccount(FileRepository repo)
         {
             var view = new CreateAccountView("Create New Account", 
-                new ShellConsole(), 
+                new ConsoleShell(), 
                 new FileRepository("."));
             view.Show();
             // Console.WriteLine("--------------------");
